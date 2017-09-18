@@ -3,9 +3,8 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Make a choice:"+"\n1. Square"+"\n2. Circle"+"\n3. Triangle"+"\n4. Rectangle");
         int choice = sc.nextInt();
 
@@ -27,7 +26,6 @@ public class Main {
     }
     public static void Square()
     {
-        Scanner sc = new Scanner(System.in);
         double length;
         double area;
         System.out.println("What is the length of the sides?");
@@ -39,7 +37,6 @@ public class Main {
 
     public static void Circle()
     {
-        Scanner sc = new Scanner(System.in);
         double radius;
         double area;
         System.out.println("What is the radius?");
@@ -51,7 +48,6 @@ public class Main {
 
     public static void Triangle()
     {
-        Scanner sc = new Scanner(System.in);
         double base;
         double height;
         double area;
@@ -66,7 +62,6 @@ public class Main {
 
     public static void Rectangle()
     {
-        Scanner sc = new Scanner(System.in);
         double width;
         double height;
         double area;
