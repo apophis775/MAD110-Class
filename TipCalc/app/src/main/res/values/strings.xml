@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tip Calc</string>
+    <string name="btn_calc">Calculate tip</string>
+    <string name="description">Tip Jar</string>
+    <string name="prompt">Select Tip</string>
+    <string name="txtcost"></string>
+    <string name="txttitle">Tip Calculator</string>
+    <string-array name="txtGroup">
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+    </string-array>
+</resources>
