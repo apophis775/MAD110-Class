@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Yen Converter</string>
+    <string name ="hint"> Amount To Convert</string>
+    <string name = "DollarsToYen">Dollars to Yen</string>
+    <string name = "YenToDollars">Yen to Dollars</string>
+    <string name  = "btn_convert">Convert Currency</string>
+</resources>
