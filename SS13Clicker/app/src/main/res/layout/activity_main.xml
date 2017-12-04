@@ -20,32 +20,34 @@
         android:id="@+id/btnUpgrade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
         android:text="@string/btnUpgrade"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/btnPromotion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="137dp"
-        android:text="@string/btnUpgrade"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnUpgrade"
-        android:layout_marginTop="0dp" />
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/btnPromotion"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/btnUpgrade"
+        app:layout_constraintTop_toTopOf="@+id/btnUpgrade" />
 
     <TextView
         android:id="@+id/lblSpaceBuck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/SpaceBucks"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="27dp"
         android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginTop="27dp"
+        android:text="@string/Work"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblDepartment"
@@ -103,9 +105,10 @@
         android:id="@+id/btnJob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="258dp"
-        android:text="@string/btnUpgrade"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnUpgrade"
-        android:layout_marginTop="0dp" />
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/btnDepart"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/btnPromotion"
+        app:layout_constraintTop_toTopOf="@+id/btnUpgrade" />
 </android.support.constraint.ConstraintLayout>
