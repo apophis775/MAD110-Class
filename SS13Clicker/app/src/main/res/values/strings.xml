@@ -1,11 +1,15 @@
 <resources>
-    <string name="app_name">SS13Clicker</string>
-    <string name="btnGreyTide">Click to Greytide</string>
-    <string name="SpaceBucks">Space Bucks:</string>
-    <string name="btnUpgrade">Upgrades</string>
+    <string name = "app_name">SS13Clicker</string>
+    <string name = "btnGreyTide">Click to work</string>
+    <string name = "SpaceBucks">Space Bucks:</string>
+    <string name = "Department">Department</string>
+    <string name = "Rank">Rank</string>
+    <string name = "btnUpgrade">Upgrades</string>
+    <string name = "btnPromotion">Promotion</string>
+    <string name = "btnDepart">Transfer Departments</string>
     <string name = "upgrades">Valuable Upgrades</string>
     <string name = "btnMoreGrey">Purchase GreyTider</string>
-    <string-array name ="spnMult">
+    <string-array name = "spnMult">
         <item>1</item>
         <item>5</item>
         <item>10</item>

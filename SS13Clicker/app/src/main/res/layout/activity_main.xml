@@ -10,7 +10,7 @@
         android:id="@+id/btnGreyTide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="106dp"
+        android:layout_marginLeft="129dp"
         android:layout_marginTop="231dp"
         android:text="@string/btnGreyTide"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,14 +20,24 @@
         android:id="@+id/btnUpgrade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
         android:text="@string/btnUpgrade"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnPromotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="137dp"
+        android:text="@string/btnUpgrade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUpgrade"
+        android:layout_marginTop="0dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lblSpaceBuck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/SpaceBucks"
@@ -38,12 +48,64 @@
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
+        android:id="@+id/lblDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Department"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRank" />
+
+    <TextView
+        android:id="@+id/lblRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Rank"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSpaceBuck" />
+
+    <TextView
         android:id="@+id/txtCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintLeft_toRightOf="@+id/lblSpaceBuck"
         android:layout_marginLeft="14dp"
-        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/lblSpaceBuck"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/txtDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/lblSpaceBuck"
+        app:layout_constraintTop_toTopOf="@+id/lblDepartment" />
+
+    <TextView
+        android:id="@+id/txtRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/lblSpaceBuck"
+        app:layout_constraintTop_toTopOf="@+id/lblRank"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/btnJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="258dp"
+        android:text="@string/btnUpgrade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUpgrade"
         android:layout_marginTop="0dp" />
 </android.support.constraint.ConstraintLayout>
