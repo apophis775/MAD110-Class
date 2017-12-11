@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnUpgrade;//Upgrade Menu
     TextView spaceBucks; //Currency
     TextView rank; //Rank
+    TextView assist;//Assistants
     double bucks = 0; //Currency
     String rankS = "Assistant"; //Tracks your current rank within a department
     final double base = 1; //This is the "base".  It will NEVER change.
@@ -53,10 +54,24 @@ public class MainActivity extends AppCompatActivity {
         btnUpgrade = (Button)findViewById(R.id.btnUpgrade);
         spaceBucks = (TextView)findViewById(R.id.txtCurrency);
         rank = (TextView)findViewById(R.id.txtRank);
+        assist = (TextView)findViewById(R.id.txtAssist);
+        assist.setText("0");
 
 
         //TIMER FOR TIMED PRODUCTION UPDATES
-        timer = new CountDownTimer()
+        timer = new CountDownTimer(5000,1000){
+            @Override
+            public void onTick(long millisUntilFinished) {
+                assist.setText(String.valueOf(timer));
+
+            }
+
+            @Override
+            public void onFinish() {
+                timer.start();
+            }
+        };
+
 
 
 

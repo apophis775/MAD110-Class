@@ -14,8 +14,10 @@
         android:layout_height="wrap_content"
         android:text="@string/btnGreyTide"
         android:textSize="30sp"
-        tools:layout_editor_absoluteY="354dp"
-        tools:layout_editor_absoluteX="70dp" />
+        android:layout_marginLeft="83dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="102dp" />
 
     <Button
         android:id="@+id/btnUpgrade"
@@ -23,8 +25,10 @@
         android:layout_height="50dp"
         android:text="@string/btnUpgrade"
         android:textSize="14sp"
-        tools:layout_editor_absoluteY="453dp"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/btnPromotion"
@@ -32,8 +36,10 @@
         android:layout_height="50dp"
         android:text="@string/btnPromotion"
         android:textSize="14sp"
-        tools:layout_editor_absoluteY="453dp"
-        tools:layout_editor_absoluteX="234dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/lblSpaceBuck"
@@ -41,8 +47,10 @@
         android:layout_height="wrap_content"
         android:text="@string/Work"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="27dp"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
 
     <TextView
         android:id="@+id/lblRank"
@@ -50,8 +58,10 @@
         android:layout_height="wrap_content"
         android:text="@string/Rank"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="59dp"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblSpaceBuck"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/lblSpaceBuck" />
 
     <TextView
         android:id="@+id/lblAssist"
@@ -59,41 +69,50 @@
         android:layout_height="wrap_content"
         android:text="@string/lblassist"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="90dp"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblRank"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/lblRank" />
 
     <TextView
         android:id="@+id/txtCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="27dp"
-        tools:layout_editor_absoluteX="129dp" />
+        app:layout_constraintLeft_toRightOf="@+id/lblSpaceBuck"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@+id/lblSpaceBuck"
+        android:layout_marginTop="0dp" />
 
     <TextView
         android:id="@+id/txtRank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="59dp"
-        tools:layout_editor_absoluteX="129dp" />
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtCurrency"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtCurrency" />
 
     <TextView
         android:id="@+id/txtAssist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="90dp"
-        tools:layout_editor_absoluteX="129dp" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtRank"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtRank" />
 
     <Button
         android:id="@+id/btnHireAssist"
         android:layout_width="72dp"
         android:layout_height="30dp"
-        android:layout_marginLeft="17dp"
+        android:layout_marginLeft="13dp"
         android:text="@string/btnHire"
         android:textSize="8sp"
         app:layout_constraintLeft_toRightOf="@+id/txtAssist"
-        tools:layout_editor_absoluteY="85dp" />
+        app:layout_constraintTop_toTopOf="@+id/txtAssist"
+        android:layout_marginTop="0dp" />
 
 </android.support.constraint.ConstraintLayout>

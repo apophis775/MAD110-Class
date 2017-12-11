@@ -22,7 +22,7 @@ public class Upgrades extends AppCompatActivity {
         spaceBucks = (TextView)findViewById(R.id.txtWork);
         spaceBucks.setText(String.valueOf(bucks));
         btnBack = (Button)findViewById(R.id.btnBack);
-        upgrade1 = (Button)findViewById(R.id.btnGreyUp);
+        upgrade1 = (Button)findViewById(R.id.btnUpgrade1);
 
 
 
