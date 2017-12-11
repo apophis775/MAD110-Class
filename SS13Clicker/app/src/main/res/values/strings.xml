@@ -8,13 +8,13 @@
     <string name = "btnPromotion">Promotion</string>
     <string name = "btnDepart">Transfer Departments</string>
     <string name = "upgrades">Valuable Upgrades</string>
-    <string name = "btnUpgrade1">Upgrade 1</string>
-    <string name = "btnUpgrade2">Upgrade 2</string>
-    <string name = "btnUpgrade3">Upgrade 3</string>
-    <string name = "btnUpgrade4">Upgrade 4</string>
-    <string name = "btnUpgrade5">Upgrade 5</string>
+    <string name = "btnUpgrade1">20% increase (500)</string>
+    <string name = "btnUpgrade2">40% increase (900)</string>
+    <string name = "btnUpgrade3">60% increase (1300)</string>
+    <string name = "btnUpgrade4">80% increase (1750)</string>
+    <string name = "btnUpgrade5">100% increase (2200)</string>
     <string name = "btnBack">Back</string>
-    <string name = "lblassist">Assistants:</string>
+    <string name = "lblassist">Assistants (10 each):</string>
     <string name = "btnHire">Hire</string>
     <string-array name = "spnMult">
         <item>1</item>

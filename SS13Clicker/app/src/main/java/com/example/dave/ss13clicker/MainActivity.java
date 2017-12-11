@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnWork; //Grey Tide, Station Wide.
     Button btnUpgrade;//Upgrade Menu
+    Button btnHireAssist;//Hire assistants
     TextView spaceBucks; //Currency
     TextView rank; //Rank
     TextView assist;//Assistants
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     double bonus = 0; //This is a prestige bonus;  When you transfer to a new station, you start as an Assistant again, but you keep 10% of the bonus from your Rank and Department at time of transfer.  It also compounds.
     double upgrade = 0; //This is the Upgrade bonus, tracked by the tools you have.  These bonuses stay with you until you transfer to another station, then they are lost.
     double perSecondBonus = 0;
+    int assistants = 0;
     CountDownTimer timer;
 
 
@@ -36,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 bucks = data.getExtras().getDouble("bucks");
                 spaceBucks.setText(String.valueOf(bucks));
-
-
+                upgrade = data.getExtras().getDouble("upgrade");
             }
         }
     }
@@ -52,17 +53,22 @@ public class MainActivity extends AppCompatActivity {
         //Variables... Variables everywhere...
         btnWork = (Button)findViewById(R.id.btnGreyTide);
         btnUpgrade = (Button)findViewById(R.id.btnUpgrade);
+        btnHireAssist = (Button)findViewById(R.id.btnHireAssist);
         spaceBucks = (TextView)findViewById(R.id.txtCurrency);
         rank = (TextView)findViewById(R.id.txtRank);
         assist = (TextView)findViewById(R.id.txtAssist);
-        assist.setText("0");
+        assist.setText(String.valueOf(assistants));
 
 
         //TIMER FOR TIMED PRODUCTION UPDATES
-        timer = new CountDownTimer(5000,1000){
+        timer = new CountDownTimer(60000,1000){
             @Override
             public void onTick(long millisUntilFinished) {
-                assist.setText(String.valueOf(timer));
+                bucks+= ((base+(1*(rankMod+bonus+upgrade)))*.05)*assistants;
+                spaceBucks.setText(String.format("%.2f", bucks));
+
+
+
 
             }
 
@@ -71,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
                 timer.start();
             }
         };
+        timer.start();
+
 
 
 
@@ -81,11 +89,28 @@ public class MainActivity extends AppCompatActivity {
         rank.setText(rankS);
 
 
+        btnHireAssist.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(bucks>=10) {
+                    bucks -= 10; //Super Cheap, cause fairly inefficient.
+                    spaceBucks.setText(String.format("%.2f", bucks));
+                    assistants++;
+                    assist.setText(String.valueOf(assistants));
+                }
+                else{
+                    //TORCH ERROR MESSAGE WILL GO HERE
+
+                }
+
+            }
+        });
+
         btnWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bucks+= base+(1*(rankMod+bonus+upgrade)); //Always adds at least 1 "work" to the total, but allows bonuses to add more.
-                spaceBucks.setText(String.valueOf(bucks));
+                spaceBucks.setText(String.format("%.2f", bucks));
             }
         });
 
@@ -96,9 +121,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent nextScreen = new Intent(MainActivity.this, Upgrades.class);
                 nextScreen.putExtra("bucks", bucks);
+                nextScreen.putExtra("rankMod", rankMod);
+                nextScreen.putExtra("bonus", bonus);
+                nextScreen.putExtra("upgrade", upgrade);
+                nextScreen.putExtra("assistants", assistants);
+
+
+
                 startActivityForResult(nextScreen,1);
             }
         });
+
+
 
 
     }
