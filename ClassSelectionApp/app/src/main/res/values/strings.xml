@@ -30,7 +30,7 @@
     <string name="cert">Certificate</string>
     <string name="twoYr">Associates Degree</string>
     <string name="major">Major</string>
-    <string name="btnNext">Next</string>
+
     <string-array name="Certificate">
         <item>Android Certificate</item>
         <item>iOS Mobile Certificate</item>
@@ -40,5 +40,27 @@
         <item>Mobile Application Development</item>
         <item>Web Development</item>
     </string-array>
+
+    <string name="btnNext">Next</string>
+    <string name="sectionClass">Select your class and time slot:</string>
+    <string name="class1">MAD-107: iOS I</string>
+    <string name="class2">MAD-155: Android II</string>
+    <string name="class3">MAD-157: ios II</string>
+    <string name="class4">MAD-257 Capstone Mobile Class</string>
+    <string name="timeRb1">T/TH 12:00pm - 1:50pm</string>
+    <string name="timeRb2">M/W 10:00am - 11:50am</string>
+    <string name="timeRb3">T/TH 12:00pm - 1:50pm</string>
+    <string name="timeRb4">T/TH 4:00pm - 5:50pm</string>
+    <string name="timeRb5">f 9:00am - 12:50pm</string>
+    <string name="timeRb6">M/W 12:00pm - 1:50pm</string>
+    <string name="sumName">Student:</string>
+    <string name="sumPhone">Phone:</string>
+    <string name="sumBirth">Birthdate:</string>
+    <string name="sumDegree">Degree Plan:</string>
+    <string name="sumMajor">Major:</string>
+    <string name="sumNext">Next Semester:</string>
+
+
+
 
 </resources>

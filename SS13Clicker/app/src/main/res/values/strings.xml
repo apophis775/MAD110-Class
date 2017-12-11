@@ -1,18 +1,21 @@
 <resources>
     <string name = "app_name">Space Station 13 Clicker</string>
-    <string name = "btnGreyTide">Click to work</string>
-    <string name = "Work">Work Done:</string>
+    <string name = "btnGreyTide">Tap to work</string>
+    <string name = "Work">Space Cash:</string>
     <string name = "Department">Department</string>
     <string name = "Rank">Rank</string>
     <string name = "btnUpgrade">Upgrades</string>
     <string name = "btnPromotion">Promotion</string>
     <string name = "btnDepart">Transfer Departments</string>
     <string name = "upgrades">Valuable Upgrades</string>
-    <string name = "btnToolBox">Purchase Toolbox (100)</string>
+    <string name = "btnUpgrade1">Upgrade 1</string>
     <string name = "btnUpgrade2">Upgrade 2</string>
     <string name = "btnUpgrade3">Upgrade 3</string>
     <string name = "btnUpgrade4">Upgrade 4</string>
     <string name = "btnUpgrade5">Upgrade 5</string>
+    <string name = "btnBack">Back</string>
+    <string name = "lblassist">Assistants:</string>
+    <string name = "btnHire">Hire</string>
     <string-array name = "spnMult">
         <item>1</item>
         <item>5</item>
